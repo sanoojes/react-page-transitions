@@ -1,7 +1,8 @@
 {
   "name": "react-page-transitions",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "homepage": "https://sanooj.is-a.dev/react-page-transitions/",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -34,3 +35,4 @@
     "vite": "^5.2.0"
   }
 }
+
