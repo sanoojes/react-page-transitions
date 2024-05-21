@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply font-bold hover:text-neutral-100 cursor-pointer;
+}
+
+.slide-in,
+.slide-out {
+  @apply bg-neutral-950 z-10 absolute h-full w-full top-0;
+}
+.slide-in {
+  animation: slide-in 0.5s;
+  transform-origin: bottom;
+}
+.slide-out {
+  animation: slide-out 1s;
+  animation-delay: 0.5s;
+  transform-origin: top;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
